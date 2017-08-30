@@ -62,3 +62,6 @@ hr {
 summary {
   display: block;
 }
+#about {
+  padding-top: 60px;
+}
