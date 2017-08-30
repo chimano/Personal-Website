@@ -6,5 +6,5 @@ $(document).ready(function () {
             scrollTop: $(target).offset().top}, 500);
 
 
- });
+    });
 });

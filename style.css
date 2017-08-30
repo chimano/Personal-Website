@@ -5,6 +5,9 @@ body {
 	font-family: 'Open Sans',serif;
 
 }
+.blue {
+  background-color: #33ccff;
+}
 #main {
    position: relative;
    
@@ -39,7 +42,19 @@ h1 {
 
 .text-justify {
 	text-align: justify;
-	font-size: 18px;
+	font-size: 20px;
+
+}
+.boxed {
+  width: 300px;
+}
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  margin: 40px;
 }
 img {
     padding: 20px;
