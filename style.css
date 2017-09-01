@@ -6,25 +6,9 @@ body {
 
 }
 .blue {
-  background-color: #33ccff;
+  background-color: #30C6E9;
 }
-#main {
-   position: relative;
-   
-}
-#main:after {
-    content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("./images/earth-img.jpg"); 
-    background-attachment: fixed;	
-    width: 100%;
-    height: 100%;
-    opacity : 0.8	;
-    z-index: -1;
-}
+
 h1 {
 	font-size: 60px;
 	margin: 0px;
@@ -32,7 +16,7 @@ h1 {
 	color: white;
 }
 .tall {
-	height: 300px
+	overflow: auto;
 }
 #intro {
 	background-image: url("./images/earth-img.jpg");
@@ -48,14 +32,7 @@ h1 {
 .boxed {
   width: 300px;
 }
-p {
-  display: block;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  margin: 40px;
-}
+
 img {
     padding: 20px;
     display: block;
@@ -63,17 +40,7 @@ img {
     max-height: 100%;
     max-width: 100%;
 }
-.transparent {
-	opacity: 0.7;
-}
-hr { 
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
-}
+
 summary {
   display: block;
 }
@@ -88,4 +55,45 @@ ul.nav {
 ul.nav li {
     display: inline-block;
     float: none;
+}
+
+
+.container {
+  position: relative;
+  width: 33%;
+}
+
+.image {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1C47E6;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
