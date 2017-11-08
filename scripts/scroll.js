@@ -3,8 +3,6 @@ $(document).ready(function () {
         e.preventDefault();
         var target = this.hash;
         $("html, body").animate({
-            scrollTop: $(target).offset().top}, 500);
-
-
+            scrollTop: $(target).offset().top}, "swing");
     });
 });

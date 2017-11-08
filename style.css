@@ -91,15 +91,6 @@ ul.nav li {
   opacity: 1;
 }
 
-.text {
-  color: white;
-  font-size: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
 #read_more {
   text-align: center;
   position: absolute;
@@ -110,11 +101,39 @@ ul.nav li {
   -moz-transition-duration:500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-}
+  font-size: 2vh;
+
 }
 #read_more:hover {
+  cursor: pointer;
+  cursor: hand;
   color: white;
 }
 #read_more > i {
   display: block;
+}
+#quotes {
+  color: #717171;
+  position: relative;
+  top: 15%;
+  width: 50%;
+  font-size: 3vh;
+  text-align: justify;
+}
+.quote {
+  width: 33%;
+  margin-left: 8%;
+  margin-bottom: 6%;
+  float: right;
+}
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
 }
