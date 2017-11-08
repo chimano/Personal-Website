@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-	padding-top: 40px;
 	font-family: 'Open Sans',serif;
 
 }
@@ -12,18 +11,22 @@ body {
 h1 {
 	font-size: 60px;
 	margin: 0px;
-	padding: 70px 10px 200px 10px;
 	color: white;
 }
-.tall {
-	overflow: auto;
+h4 {
+  color: #868686;
 }
+
 #intro {
 	background-image: url("./images/earth-img.jpg");
 	background-attachment: fixed;
+  height: 100vh;
 	
 }
-
+#main {
+    position: relative;
+    top: 50px;
+}
 .text-justify {
 	text-align: justify;
 	font-size: 20px;
@@ -96,4 +99,22 @@ ul.nav li {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+#read_more {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  color: #717171;
+  left: 46%;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration:500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+}
+#read_more:hover {
+  color: white;
+}
+#read_more > i {
+  display: block;
 }
